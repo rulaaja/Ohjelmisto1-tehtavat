@@ -4,4 +4,4 @@ if pituus>=37:
 if pituus<=36:
     alimitta=abs((pituus)-37)
 
-    print("Kuha on alimittainen, sallitusta pituudesta puuttuu: " + str(alimitta))
+    print(f"Kuha on alimittainen, sallitusta pituudesta puuttuu: {alimitta}" )

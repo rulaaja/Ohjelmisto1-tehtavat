@@ -1,4 +1,4 @@
-sukupuoli=input("Mies vai nainen? " )
+sukupuoli=input("Oletko Mies vai Nainen? " )
 hemo=float(input("Mikä on hemoglobiiniarvosi? "))
 
 if sukupuoli=="Mies" and hemo>194:
