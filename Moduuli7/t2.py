@@ -1,13 +1,27 @@
 
 nimet = set()
-nimet.add("Viivi")
 
 
-nimi=input("Anna nimi: ")
-while nimi!="":
-    nimet.add(nimi)
-    nimi2 = input("Uusi nimi: ")
-    if nimi == nimi2:
+
+
+while True:
+    nimi = input("Anna nimi (Syötä tyhjämerkkijono lopettaaksesi): ")
+    if nimi == "":
+        break
+    if nimi not in nimet:
+        nimet.add(nimi)
+        nimi = input("Uusi nimi: ")
+        if nimi == "":
+            break
+    if nimi in nimet:
         nimi=input("Aiemmin syötetty nimi: ")
+        if nimi == "":
+            break
+    if nimi not in nimet and nimi !="":
+        nimet.add(nimi)
+        if nimi == "":
+            break
 
+for n in nimet:
+    print(f"Nimet: {[n]}")
 

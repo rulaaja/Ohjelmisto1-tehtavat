@@ -1,17 +1,27 @@
+import inquirer
 
-print("""\
 
-   
-      __|__
-*---o--(_)--o---*                _  _
-                               ( `   )_
-   MIEHEN SALAINEN MATKA    (    )    `)
-      THAIMAA             (_   (_ .  _) _)                       
-    
-   """)
-aloitus=input("Paina mitä vain aloittaaksesi: ")
-print("Tehtävä: Olet kiireinen työmies, jolla on tärkeitä työasioita ulkomailla.")
-print("Haluat kuitenkin suorittaa äijäreissun Thaimaaseen töiden ohessa.")
-print("Sinun täytyy matkustaa Thaimaaseen ilman, että ylität CO2-budjettisi.")
+
+def aloitus():
+    print("""\
+
+
+          __|__
+    *---o--(_)--o---*                _  _
+                                   ( `   )_
+       MIEHEN SALAINEN MATKA    (    )    `)
+          THAIMAA             (_   (_ .  _) _)                       
+
+       """)
+    aloitus = input("Paina mitä vain aloittaaksesi: ")
+    print("Sinun täytyy matkustaa Thaimaaseen ilman, että ylität CO2-budjettisi.")
+
+    questions = [
+                      message=="Choose a country:",
+                      choices=maat,  # Use the dynamically generated list
+
+        ]
+
+aloitus()
 
 
